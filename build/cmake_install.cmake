@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/anshul/Coding/MicroFRED/build/gtest/cmake_install.cmake")
+  include("/home/anshul/Coding/MicroFRED/build/Navigation/cmake_install.cmake")
 
 endif()
 
