@@ -1,2 +1,0 @@
-
--DCATKIN_DEVEL_PREFIX=/home/anshul/Coding/MicroFRED/devel -DCMAKE_INSTALL_PREFIX=/home/anshul/Coding/MicroFRED/install -G Unix Makefiles
