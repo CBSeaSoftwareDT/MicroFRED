@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/subscriber.dir/src/teleop_subscriber.cpp.o"
-  "/home/anshul/Coding/MicroFRED/devel/lib/Navigation/subscriber.pdb"
-  "/home/anshul/Coding/MicroFRED/devel/lib/Navigation/subscriber"
+  "/home/ava/MicroFRED/devel/lib/Navigation/subscriber.pdb"
+  "/home/ava/MicroFRED/devel/lib/Navigation/subscriber"
 )
 
 # Per-language clean rules from dependency scanning.

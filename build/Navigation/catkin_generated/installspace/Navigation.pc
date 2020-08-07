@@ -1,4 +1,4 @@
-prefix=/home/anshul/Coding/MicroFRED/install
+prefix=/home/ava/MicroFRED/install
 
 Name: Navigation
 Description: Description of Navigation

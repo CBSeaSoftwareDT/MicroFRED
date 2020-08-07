@@ -1,8 +1,8 @@
-# Install script for directory: /home/anshul/Coding/MicroFRED/src/Navigation
+# Install script for directory: /home/ava/MicroFRED/src/Navigation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/anshul/Coding/MicroFRED/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ava/MicroFRED/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/anshul/Coding/MicroFRED/build/Navigation/catkin_generated/installspace/Navigation.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ava/MicroFRED/build/Navigation/catkin_generated/installspace/Navigation.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/Navigation/cmake" TYPE FILE FILES
-    "/home/anshul/Coding/MicroFRED/build/Navigation/catkin_generated/installspace/NavigationConfig.cmake"
-    "/home/anshul/Coding/MicroFRED/build/Navigation/catkin_generated/installspace/NavigationConfig-version.cmake"
+    "/home/ava/MicroFRED/build/Navigation/catkin_generated/installspace/NavigationConfig.cmake"
+    "/home/ava/MicroFRED/build/Navigation/catkin_generated/installspace/NavigationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/Navigation" TYPE FILE FILES "/home/anshul/Coding/MicroFRED/src/Navigation/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/Navigation" TYPE FILE FILES "/home/ava/MicroFRED/src/Navigation/package.xml")
 endif()
 

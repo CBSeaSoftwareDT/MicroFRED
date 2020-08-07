@@ -67,14 +67,14 @@ set(Navigation_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(Navigation_SOURCE_PREFIX /home/anshul/Coding/MicroFRED/src/Navigation)
-  set(Navigation_DEVEL_PREFIX /home/anshul/Coding/MicroFRED/devel)
+  set(Navigation_SOURCE_PREFIX /home/ava/MicroFRED/src/Navigation)
+  set(Navigation_DEVEL_PREFIX /home/ava/MicroFRED/devel)
   set(Navigation_INSTALL_PREFIX "")
   set(Navigation_PREFIX ${Navigation_DEVEL_PREFIX})
 else()
   set(Navigation_SOURCE_PREFIX "")
   set(Navigation_DEVEL_PREFIX "")
-  set(Navigation_INSTALL_PREFIX /home/anshul/Coding/MicroFRED/install)
+  set(Navigation_INSTALL_PREFIX /home/ava/MicroFRED/install)
   set(Navigation_PREFIX ${Navigation_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/anshul/Coding/MicroFRED/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/ava/MicroFRED/install/lib;/home/ava/MicroFRED/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

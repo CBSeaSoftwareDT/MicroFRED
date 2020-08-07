@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anshul/Coding/MicroFRED/src
+CMAKE_SOURCE_DIR = /home/ava/MicroFRED/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anshul/Coding/MicroFRED/build
+CMAKE_BINARY_DIR = /home/ava/MicroFRED/build
 
 # Utility rule file for std_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ Navigation/CMakeFiles/std_msgs_generate_messages_cpp.dir/build: std_msgs_generat
 .PHONY : Navigation/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 
 Navigation/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	cd /home/anshul/Coding/MicroFRED/build/Navigation && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/ava/MicroFRED/build/Navigation && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : Navigation/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 Navigation/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend:
-	cd /home/anshul/Coding/MicroFRED/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anshul/Coding/MicroFRED/src /home/anshul/Coding/MicroFRED/src/Navigation /home/anshul/Coding/MicroFRED/build /home/anshul/Coding/MicroFRED/build/Navigation /home/anshul/Coding/MicroFRED/build/Navigation/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ava/MicroFRED/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ava/MicroFRED/src /home/ava/MicroFRED/src/Navigation /home/ava/MicroFRED/build /home/ava/MicroFRED/build/Navigation /home/ava/MicroFRED/build/Navigation/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Navigation/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 

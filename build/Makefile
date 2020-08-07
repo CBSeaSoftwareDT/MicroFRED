@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anshul/Coding/MicroFRED/src
+CMAKE_SOURCE_DIR = /home/ava/MicroFRED/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anshul/Coding/MicroFRED/build
+CMAKE_BINARY_DIR = /home/ava/MicroFRED/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anshul/Coding/MicroFRED/build/CMakeFiles /home/anshul/Coding/MicroFRED/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ava/MicroFRED/build/CMakeFiles /home/ava/MicroFRED/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anshul/Coding/MicroFRED/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ava/MicroFRED/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -296,6 +296,19 @@ roscpp_generate_messages_py: cmake_check_build_system
 roscpp_generate_messages_py/fast:
 	$(MAKE) -f Navigation/CMakeFiles/roscpp_generate_messages_py.dir/build.make Navigation/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named test_pub
+
+# Build rule for target.
+test_pub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_pub
+.PHONY : test_pub
+
+# fast build rule for target.
+test_pub/fast:
+	$(MAKE) -f Navigation/CMakeFiles/test_pub.dir/build.make Navigation/CMakeFiles/test_pub.dir/build
+.PHONY : test_pub/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_eus
@@ -515,6 +528,7 @@ help:
 	@echo "... gtest_main"
 	@echo "... gtest"
 	@echo "... roscpp_generate_messages_py"
+	@echo "... test_pub"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"

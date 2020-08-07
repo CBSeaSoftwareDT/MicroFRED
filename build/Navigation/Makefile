@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anshul/Coding/MicroFRED/src
+CMAKE_SOURCE_DIR = /home/ava/MicroFRED/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anshul/Coding/MicroFRED/build
+CMAKE_BINARY_DIR = /home/ava/MicroFRED/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anshul/Coding/MicroFRED/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anshul/Coding/MicroFRED/build/CMakeFiles /home/anshul/Coding/MicroFRED/build/Navigation/CMakeFiles/progress.marks
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anshul/Coding/MicroFRED/build/CMakeFiles 0
+	cd /home/ava/MicroFRED/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ava/MicroFRED/build/CMakeFiles /home/ava/MicroFRED/build/Navigation/CMakeFiles/progress.marks
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ava/MicroFRED/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/clean
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/preinstall
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/preinstall
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anshul/Coding/MicroFRED/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ava/MicroFRED/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Navigation/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/roscpp_generate_messages_py.dir/rule
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : Navigation/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,27 @@ roscpp_generate_messages_py: Navigation/CMakeFiles/roscpp_generate_messages_py.d
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/roscpp_generate_messages_py.dir/build.make Navigation/CMakeFiles/roscpp_generate_messages_py.dir/build
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/roscpp_generate_messages_py.dir/build.make Navigation/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
+Navigation/CMakeFiles/test_pub.dir/rule:
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/test_pub.dir/rule
+.PHONY : Navigation/CMakeFiles/test_pub.dir/rule
+
+# Convenience name for target.
+test_pub: Navigation/CMakeFiles/test_pub.dir/rule
+
+.PHONY : test_pub
+
+# fast build rule for target.
+test_pub/fast:
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/test_pub.dir/build.make Navigation/CMakeFiles/test_pub.dir/build
+.PHONY : test_pub/fast
+
+# Convenience name for target.
 Navigation/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 .PHONY : Navigation/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -194,12 +209,12 @@ roscpp_generate_messages_eus: Navigation/CMakeFiles/roscpp_generate_messages_eus
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/roscpp_generate_messages_eus.dir/build.make Navigation/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/roscpp_generate_messages_eus.dir/build.make Navigation/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
 Navigation/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : Navigation/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -209,12 +224,12 @@ roscpp_generate_messages_lisp: Navigation/CMakeFiles/roscpp_generate_messages_li
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make Navigation/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make Navigation/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 Navigation/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : Navigation/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -224,12 +239,12 @@ rosgraph_msgs_generate_messages_cpp: Navigation/CMakeFiles/rosgraph_msgs_generat
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make Navigation/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make Navigation/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 Navigation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : Navigation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -239,12 +254,12 @@ std_msgs_generate_messages_lisp: Navigation/CMakeFiles/std_msgs_generate_message
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make Navigation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make Navigation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 Navigation/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : Navigation/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -254,12 +269,12 @@ roscpp_generate_messages_cpp: Navigation/CMakeFiles/roscpp_generate_messages_cpp
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make Navigation/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make Navigation/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 Navigation/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : Navigation/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -269,12 +284,12 @@ rosgraph_msgs_generate_messages_eus: Navigation/CMakeFiles/rosgraph_msgs_generat
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make Navigation/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make Navigation/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 Navigation/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : Navigation/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -284,12 +299,12 @@ rosgraph_msgs_generate_messages_lisp: Navigation/CMakeFiles/rosgraph_msgs_genera
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make Navigation/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make Navigation/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 Navigation/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : Navigation/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -299,12 +314,12 @@ std_msgs_generate_messages_cpp: Navigation/CMakeFiles/std_msgs_generate_messages
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make Navigation/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make Navigation/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 Navigation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : Navigation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -314,12 +329,12 @@ rosgraph_msgs_generate_messages_nodejs: Navigation/CMakeFiles/rosgraph_msgs_gene
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make Navigation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make Navigation/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 Navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : Navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -329,12 +344,12 @@ rosgraph_msgs_generate_messages_py: Navigation/CMakeFiles/rosgraph_msgs_generate
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make Navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make Navigation/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 Navigation/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 .PHONY : Navigation/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -344,12 +359,12 @@ std_msgs_generate_messages_eus: Navigation/CMakeFiles/std_msgs_generate_messages
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make Navigation/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make Navigation/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 Navigation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : Navigation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -359,12 +374,12 @@ std_msgs_generate_messages_nodejs: Navigation/CMakeFiles/std_msgs_generate_messa
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make Navigation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make Navigation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 Navigation/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : Navigation/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -374,12 +389,12 @@ roscpp_generate_messages_nodejs: Navigation/CMakeFiles/roscpp_generate_messages_
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make Navigation/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make Navigation/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
 Navigation/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : Navigation/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -389,12 +404,12 @@ std_msgs_generate_messages_py: Navigation/CMakeFiles/std_msgs_generate_messages_
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/std_msgs_generate_messages_py.dir/build.make Navigation/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/std_msgs_generate_messages_py.dir/build.make Navigation/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 Navigation/CMakeFiles/subscriber.dir/rule:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/subscriber.dir/rule
+	cd /home/ava/MicroFRED/build && $(MAKE) -f CMakeFiles/Makefile2 Navigation/CMakeFiles/subscriber.dir/rule
 .PHONY : Navigation/CMakeFiles/subscriber.dir/rule
 
 # Convenience name for target.
@@ -404,7 +419,7 @@ subscriber: Navigation/CMakeFiles/subscriber.dir/rule
 
 # fast build rule for target.
 subscriber/fast:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/subscriber.dir/build.make Navigation/CMakeFiles/subscriber.dir/build
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/subscriber.dir/build.make Navigation/CMakeFiles/subscriber.dir/build
 .PHONY : subscriber/fast
 
 src/teleop_subscriber.o: src/teleop_subscriber.cpp.o
@@ -413,7 +428,7 @@ src/teleop_subscriber.o: src/teleop_subscriber.cpp.o
 
 # target to build an object file
 src/teleop_subscriber.cpp.o:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/subscriber.dir/build.make Navigation/CMakeFiles/subscriber.dir/src/teleop_subscriber.cpp.o
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/subscriber.dir/build.make Navigation/CMakeFiles/subscriber.dir/src/teleop_subscriber.cpp.o
 .PHONY : src/teleop_subscriber.cpp.o
 
 src/teleop_subscriber.i: src/teleop_subscriber.cpp.i
@@ -422,7 +437,7 @@ src/teleop_subscriber.i: src/teleop_subscriber.cpp.i
 
 # target to preprocess a source file
 src/teleop_subscriber.cpp.i:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/subscriber.dir/build.make Navigation/CMakeFiles/subscriber.dir/src/teleop_subscriber.cpp.i
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/subscriber.dir/build.make Navigation/CMakeFiles/subscriber.dir/src/teleop_subscriber.cpp.i
 .PHONY : src/teleop_subscriber.cpp.i
 
 src/teleop_subscriber.s: src/teleop_subscriber.cpp.s
@@ -431,8 +446,35 @@ src/teleop_subscriber.s: src/teleop_subscriber.cpp.s
 
 # target to generate assembly for a file
 src/teleop_subscriber.cpp.s:
-	cd /home/anshul/Coding/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/subscriber.dir/build.make Navigation/CMakeFiles/subscriber.dir/src/teleop_subscriber.cpp.s
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/subscriber.dir/build.make Navigation/CMakeFiles/subscriber.dir/src/teleop_subscriber.cpp.s
 .PHONY : src/teleop_subscriber.cpp.s
+
+src/test_publisher.o: src/test_publisher.cpp.o
+
+.PHONY : src/test_publisher.o
+
+# target to build an object file
+src/test_publisher.cpp.o:
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/test_pub.dir/build.make Navigation/CMakeFiles/test_pub.dir/src/test_publisher.cpp.o
+.PHONY : src/test_publisher.cpp.o
+
+src/test_publisher.i: src/test_publisher.cpp.i
+
+.PHONY : src/test_publisher.i
+
+# target to preprocess a source file
+src/test_publisher.cpp.i:
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/test_pub.dir/build.make Navigation/CMakeFiles/test_pub.dir/src/test_publisher.cpp.i
+.PHONY : src/test_publisher.cpp.i
+
+src/test_publisher.s: src/test_publisher.cpp.s
+
+.PHONY : src/test_publisher.s
+
+# target to generate assembly for a file
+src/test_publisher.cpp.s:
+	cd /home/ava/MicroFRED/build && $(MAKE) -f Navigation/CMakeFiles/test_pub.dir/build.make Navigation/CMakeFiles/test_pub.dir/src/test_publisher.cpp.s
+.PHONY : src/test_publisher.cpp.s
 
 # Help Target
 help:
@@ -446,6 +488,7 @@ help:
 	@echo "... test"
 	@echo "... list_install_components"
 	@echo "... roscpp_generate_messages_py"
+	@echo "... test_pub"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... edit_cache"
 	@echo "... roscpp_generate_messages_lisp"
@@ -466,6 +509,9 @@ help:
 	@echo "... src/teleop_subscriber.o"
 	@echo "... src/teleop_subscriber.i"
 	@echo "... src/teleop_subscriber.s"
+	@echo "... src/test_publisher.o"
+	@echo "... src/test_publisher.i"
+	@echo "... src/test_publisher.s"
 .PHONY : help
 
 
@@ -477,6 +523,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anshul/Coding/MicroFRED/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ava/MicroFRED/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/anshul/Coding/MicroFRED/src
-# Build directory: /home/anshul/Coding/MicroFRED/build
+# Source directory: /home/ava/MicroFRED/src
+# Build directory: /home/ava/MicroFRED/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
