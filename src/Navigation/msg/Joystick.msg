@@ -1,0 +1,2 @@
+int64 joystick_vertical
+int64 joystick_horizontal
