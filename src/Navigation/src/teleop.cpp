@@ -1,5 +1,4 @@
-#include <ros/ros.h>
-#include <std_msgs/Float64.h>
+#include <ros/ros.h>4.h>
 #include <Navigation/Joystick.h>
 #include <iostream>
 #include <string>
@@ -18,17 +17,17 @@ int main(int argc, char **argv) {
 
 	while(ros::ok())
 	{
-		std::cout << "Enter any integer between 0 and 95 for the horizontal joystick reading: ";
+		std::cout << "Enter any integer between 0 and 90 for the horizontal joystick reading: ";
 		
 		std::cin >> input;
-		if(input > 95 || input < 0 )
+		if(input > 90 || input < 0 )
 			std::cout << "Invalid input";
 		else 
 			user_input.joystick_horizontal = input;
 		
-		std::cout << "Enter any integer between -95 and 95 for the horizontal joystick reading: ";
+		std::cout << "Enter any integer between -90 and 90 for the horizontal joystick reading: ";
 		std::cin >> input;
-		if(input < -95 || input >95)
+		if(input < -90 || input >90)
 			std::cout << "Invalid input";
 		else 
 			user_input.joystick_vertical = input;

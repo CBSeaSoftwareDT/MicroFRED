@@ -1,2 +1,2 @@
-int64 joystick_vertical
-int64 joystick_horizontal
+int32 joystick_vertical
+int32 joystick_horizontal
