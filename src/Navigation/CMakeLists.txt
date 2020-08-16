@@ -134,7 +134,6 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
  
    add_executable(subscriber src/teleop_subscriber.cpp)
-   add_executable(test_pub src/test_publisher.cpp)
    add_executable(teleop src/teleop.cpp)
 
 ## Rename C++ executable without prefix
@@ -149,7 +148,6 @@ include_directories(
 
 ## Specify libraries to link a library or executable target against
   target_link_libraries(subscriber ${catkin_LIBRARIES} )
-  target_link_libraries(test_pub ${catkin_LIBRARIES} )
   target_link_libraries(teleop ${catkin_LIBRARIES} )
 
 #############
