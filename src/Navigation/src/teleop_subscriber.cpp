@@ -60,12 +60,12 @@ public:
 			right_motor_speed = 0;
 		}
 
-		if(joystick_data.joystick_vertical < 0) {
+		if(joystick_data.joystick_horizontal < 0) {
 			//TURN LEFT
 			//this means the left wheel needs to move slower than the wheel on the right 
 
 			//change the data to a positive number
-			int temp = joystick_data.joystick_vertical*-1;
+			int temp = joystick_data.joystick_horizontal*-1;
 			
 			//offset the left and right motor speed by the correct, mapped amount
 			left_motor_speed -= map(temp, INPUT_LOWER_BOUND, 
@@ -84,14 +84,14 @@ public:
 			}
 
 		}
-		else if(joystick_data.joystick_vertical > 0) {
+		else if(joystick_data.joystick_horizontal > 0) {
 			//TURN RIGHT 
 			//this means the left wheel needs to move faster than the wheel on the right 
 
 			//offset the left and right motor speed by the correct, mapped amount
-			left_motor_speed += map(joystick_data.joystick_vertical, INPUT_LOWER_BOUND, 
+			left_motor_speed += map(joystick_data.joystick_horizontal, INPUT_LOWER_BOUND, 
 				INPUT_UPPER_BOUND, MOTOR_LOWER_BOUND, MOTOR_UPPER_BOUND);
-			right_motor_speed -= map(joystick_data.joystick_vertical, INPUT_LOWER_BOUND, 
+			right_motor_speed -= map(joystick_data.joystick_horizontal, INPUT_LOWER_BOUND, 
 				INPUT_UPPER_BOUND, MOTOR_LOWER_BOUND, MOTOR_UPPER_BOUND);
 
 			//ensure motor speeds are still in the correct range.
