@@ -17,23 +17,25 @@ int main(int argc, char **argv) {
 
 	while(ros::ok())
 	{
-		std::cout << "Enter any integer between 0 and 90 for the vertical joystick reading: ";
+		std::cout << "Enter any integer between -90 and 90 for the vertical joystick reading: ";
 		
 		std::cin >> input;
-		if(input > 90 || input < 0 )
+		if(input > 90 || input < -90 )
 			std::cout << "Invalid input";
-		else 
+		else {
 			user_input.joystick_vertical = input;
 		
-		std::cout << "Enter any integer between -90 and 90 for the horizontal joystick reading: ";
-		std::cin >> input;
-		if(input < -90 || input >90)
-			std::cout << "Invalid input";
-		else 
-			user_input.joystick_horizontal = input;
-		
-		publisher.publish(user_input);
+			std::cout << "Enter any integer between -90 and 90 for the horizontal joystick reading: ";
+			std::cin >> input;
+			if(input < -90 || input >90)
+				std::cout << "Invalid input";
+			else 
+				user_input.joystick_horizontal = input;
+			
+			
+			publisher.publish(user_input);
 
-		naptime.sleep();
+			naptime.sleep();
+		}
 	}
 }
