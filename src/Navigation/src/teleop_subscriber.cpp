@@ -63,8 +63,7 @@ public:
 			forwards_motor = false;
 			left_motor_speed = map(temp,INPUT_MIDDLE, INPUT_UPPER_BOUND, MOTOR_LOWER_BOUND, MOTOR_UPPER_BOUND);
 			right_motor_speed  = left_motor_speed;
-		}
-		
+		}	
 		else {
 			left_motor_speed = 0;
 			right_motor_speed = 0;
