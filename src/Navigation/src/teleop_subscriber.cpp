@@ -1,12 +1,14 @@
 #include<ros/ros.h>
 #include<Navigation/Joystick.h>
 #include<Navigation/Motor_Speed.h>
+#include <ros/console.h>
 
 #define INPUT_LOWER_BOUND -90		//the lowest value a user input can give you 
 #define INPUT_MIDDLE 0 			// the midpoint of your user input values (your 0 point)
 #define INPUT_UPPER_BOUND 90	//the maximum value a user input can give you 
 #define MOTOR_LOWER_BOUND 100   //the slowest you would like the motor to spin 
 #define MOTOR_UPPER_BOUND 3200  //the fastest you would like the motor to spin (this number is usually given by the manufacturer)
+#define DEBUG 1					//sets debug messages on or off
 
 class teleop_subscriber
 {
@@ -77,9 +79,9 @@ public:
 			int temp = joystick_data.joystick_horizontal*-1;
 			
 			//offset the left and right motor speed by the correct, mapped amount
-			left_motor_speed -= map(temp, INPUT_LOWER_BOUND, 
+			left_motor_speed -= map(temp, INPUT_MIDDLE, 
 				INPUT_UPPER_BOUND, MOTOR_LOWER_BOUND, MOTOR_UPPER_BOUND);
-			right_motor_speed += map(temp, INPUT_LOWER_BOUND, 
+			right_motor_speed += map(temp, INPUT_MIDDLE, 
 				INPUT_UPPER_BOUND, MOTOR_LOWER_BOUND, MOTOR_UPPER_BOUND);
 
 
@@ -98,9 +100,9 @@ public:
 			//this means the left wheel needs to move faster than the wheel on the right 
 
 			//offset the left and right motor speed by the correct, mapped amount
-			left_motor_speed += map(joystick_data.joystick_horizontal, INPUT_LOWER_BOUND, 
+			left_motor_speed += map(joystick_data.joystick_horizontal, INPUT_MIDDLE, 
 				INPUT_UPPER_BOUND, MOTOR_LOWER_BOUND, MOTOR_UPPER_BOUND);
-			right_motor_speed -= map(joystick_data.joystick_horizontal, INPUT_LOWER_BOUND, 
+			right_motor_speed -= map(joystick_data.joystick_horizontal, INPUT_MIDDLE, 
 				INPUT_UPPER_BOUND, MOTOR_LOWER_BOUND, MOTOR_UPPER_BOUND);
 
 			//ensure motor speeds are still in the correct range.
@@ -111,6 +113,7 @@ public:
 				right_motor_speed = MOTOR_LOWER_BOUND;
 			}
 		}
+
 
 		//encode the two motor speeds into a integer
 		motor_speeds.forwards_direction = forwards_motor;
@@ -134,7 +137,7 @@ int main(int argc, char **argv)
 {
 	ros::init(argc, argv, "user_input_subscriber");
 	ros::NodeHandle nh;
-	
+
 	teleop_subscriber inst = teleop_subscriber(nh);
 
 	ros::spin();

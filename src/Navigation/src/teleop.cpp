@@ -29,13 +29,11 @@ int main(int argc, char **argv) {
 			std::cin >> input;
 			if(input < -90 || input >90)
 				std::cout << "Invalid input";
-			else 
+			else {
 				user_input.joystick_horizontal = input;
-			
-			
-			publisher.publish(user_input);
-
-			naptime.sleep();
+				publisher.publish(user_input);
+				naptime.sleep();
+			}
 		}
 	}
 }

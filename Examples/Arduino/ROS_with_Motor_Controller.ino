@@ -1,6 +1,6 @@
 #include <SoftwareSerial.h>
 #include <ros.h>
-#include <std_msgs/Int32.h>
+#include <Navigation/Motor_Speed.h>
 #define USE_USBCON
 #define rxPin 3  // pin 3 connects to smcSerial TX  (not used in this example)
 #define txPin 4  // pin 4 connects to smcSerial RX
@@ -14,14 +14,13 @@ int right_motor_speed = 0;
 SoftwareSerial smcSerial_left = SoftwareSerial(rxPin, txPin);
 SoftwareSerial smcSerial_right = SoftwareSerial(rxPin2, txPin2);
 
-void motor_callback(const std_msgs::Int32& msg) {
-  decode(msg.data);
-  setMotorSpeed(left_motor_speed, right_motor_speed);
+void motor_callback(const Navigation::Motor_Speed& msg) {
+  setMotorSpeed(msg.left_motor_speed, msg.right_motor_speed, msg.forwards_direction);
 }
 
 
 
-ros::Subscriber<std_msgs::Int32> sub("motor_data", &motor_callback);
+ros::Subscriber<Navigation::Motor_Speed> sub("motor_data", &motor_callback);
 
 
 
@@ -42,20 +41,18 @@ void test() {
   
 }
 
-void decode(int z) {
-  int w = floor( (sqrt(z*8.0+1)-1)/2 );
-  int t = (w*w + w)/2;
-  right_motor_speed = z - t;
-  left_motor_speed  = w-right_motor_speed;
-}
 
 // speed should be a number from -3200 to 3200
-void setMotorSpeed(int left_speed, int right_speed)
+void setMotorSpeed(int left_speed, int right_speed, boolean forwards)
 {
- 
-  smcSerial_left.write(0x85);
-  smcSerial_right.write(0x85);
- 
+  if(!forwards){
+    smcSerial_left.write(0x86);
+    smcSerial_right.write(0x86);
+  }
+  else{
+    smcSerial_left.write(0x85);
+    smcSerial_right.write(0x85);
+  } 
   smcSerial_left.write(left_speed & 0x1F);
   smcSerial_right.write(right_speed & 0x1F);
   

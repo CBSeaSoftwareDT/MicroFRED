@@ -1,0 +1,4 @@
+<launch>
+    <node name = "user_input" pkg="Navigation" type="teleop" output="screen" launch-prefix="gnome-terminal --command" />
+    <node name = "input_subscrber" pkg="Navigation" type="subscriber" output="screen" launch-prefix="gnome-terminal --command"/> 
+</launch>
