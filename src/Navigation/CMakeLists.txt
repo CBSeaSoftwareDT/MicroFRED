@@ -137,6 +137,7 @@ include_directories(
    add_executable(subscriber src/teleop_subscriber.cpp)
    add_executable(teleop src/teleop.cpp)
    add_executable(arduino_test src/test_arduino.cpp)
+   add_executable(teleop_js src/teleop_js.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -152,6 +153,7 @@ include_directories(
   target_link_libraries(subscriber ${catkin_LIBRARIES} )
   target_link_libraries(teleop ${catkin_LIBRARIES} )
   target_link_libraries(arduino_test ${catkin_LIBRARIES} )
+  target_link_libraries(teleop_js ${catkin_LIBRARIES} )
 
 #############
 ## Install ##
