@@ -10,6 +10,7 @@ project(Navigation)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
+  message_generation
 )
 
 ## System dependencies are found with CMake's conventions
@@ -46,11 +47,11 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+ add_message_files(
+   FILES
+   Joystick.msg
+   Motor_Speed.msg
+ )
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -67,10 +68,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs
-# )
+ generate_messages(
+   DEPENDENCIES
+   std_msgs
+ )
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -104,7 +105,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES Navigation
-#  CATKIN_DEPENDS roscpp std_msgs
+#  CATKIN_DEPENDS roscpp std_msgs message_runtime
 #  DEPENDS system_lib
 )
 
@@ -134,8 +135,9 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
  
    add_executable(subscriber src/teleop_subscriber.cpp)
-   add_executable(test_pub src/test_publisher.cpp)
    add_executable(teleop src/teleop.cpp)
+   add_executable(arduino_test src/test_arduino.cpp)
+   add_executable(teleop_js src/teleop_js.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -149,8 +151,9 @@ include_directories(
 
 ## Specify libraries to link a library or executable target against
   target_link_libraries(subscriber ${catkin_LIBRARIES} )
-  target_link_libraries(test_pub ${catkin_LIBRARIES} )
   target_link_libraries(teleop ${catkin_LIBRARIES} )
+  target_link_libraries(arduino_test ${catkin_LIBRARIES} )
+  target_link_libraries(teleop_js ${catkin_LIBRARIES} )
 
 #############
 ## Install ##

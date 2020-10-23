@@ -1,0 +1,2 @@
+int32 joystick_vertical
+int32 joystick_horizontal
