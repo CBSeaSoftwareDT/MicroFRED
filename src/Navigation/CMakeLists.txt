@@ -125,6 +125,15 @@ include_directories(
 #   src/${PROJECT_NAME}/Navigation.cpp
 # )
 
+## Declare a C++ executable
+## With catkin_make all packages are built within a single CMake context
+## The recommended prefix ensures that target names across packages don't collide
+ 
+ add_executable(subscriber src/teleop_subscriber.cpp)
+ add_executable(teleop src/teleop.cpp)
+ add_executable(arduino_test src/test_arduino.cpp)
+ add_executable(teleop_js src/teleop_js.cpp)
+
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
@@ -134,14 +143,6 @@ add_dependencies(teleop ${${PROJECT_NAME}_EXPORTED_TARGETS})
 add_dependencies(arduino_test ${${PROJECT_NAME}_EXPORTED_TARGETS})
 add_dependencies(teleop_js ${${PROJECT_NAME}_EXPORTED_TARGETS})
 
-## Declare a C++ executable
-## With catkin_make all packages are built within a single CMake context
-## The recommended prefix ensures that target names across packages don't collide
- 
-   add_executable(subscriber src/teleop_subscriber.cpp)
-   add_executable(teleop src/teleop.cpp)
-   add_executable(arduino_test src/test_arduino.cpp)
-   add_executable(teleop_js src/teleop_js.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
