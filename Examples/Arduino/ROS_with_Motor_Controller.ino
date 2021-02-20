@@ -1,7 +1,8 @@
+#define USE_USBCON
 #include <SoftwareSerial.h>
 #include <ros.h>
 #include <Navigation/Motor_Speed.h>
-#define USE_USBCON
+
 #define rxPin 3  // pin 3 connects to smcSerial TX  (not used in this example)
 #define txPin 4  // pin 4 connects to smcSerial RX
 #define rxPin2 2  //pin 2 connects to smcSerial TX (not used in this example)
